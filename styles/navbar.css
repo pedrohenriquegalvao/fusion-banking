@@ -5,7 +5,7 @@
 * {
   padding: 0;
   margin: 0;
-  text-decoration: none;
+  text-decoration: none !important;
   list-style: none !important;
 }
 
@@ -34,6 +34,9 @@ nav .options ul {
 nav .options li {
   margin-right: 30px;
 }
+nav .options li a {
+  color: #FFF;
+}
 nav .options li:last-child {
   margin: 0;
 }
@@ -48,6 +51,20 @@ nav .options .nav-right button {
   border: 0.1px solid #FFF;
   border-radius: 5px;
   margin-left: 20px;
+}
+nav .options .nav-right button:hover {
+  cursor: pointer;
+}
+nav .options .nav-right .user-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 30px;
+}
+nav .options .nav-right .user-area li#user-pic a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 nav .options li {
   color: #FFF;
@@ -87,7 +104,7 @@ nav .close-sidebar {
     top: 0;
     height: 100%;
     width: 45vw !important;
-    padding: 1em;
+    padding: 1em 1em;
     right: -100vw;
     -webkit-animation-duration: 1s;
             animation-duration: 1s;
@@ -97,9 +114,25 @@ nav .close-sidebar {
   }
   body .options li {
     margin-right: 0;
+    margin-bottom: 8vh;
   }
-  body .options button {
+  body .options li button {
     margin-left: 0 !important;
+  }
+  body .options .nav-left {
+    margin-top: 5vh;
+    margin-bottom: 8vh;
+  }
+  body .options .nav-right .user-area {
+    flex-direction: row-reverse;
+    margin: 0;
+    margin-bottom: 20vh;
+  }
+  body .options .nav-right .user-area li {
+    margin: 0;
+  }
+  body .options .nav-right .user-area li#user-pic {
+    margin-right: 1em;
   }
   @-webkit-keyframes showSidebar {
     from {

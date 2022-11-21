@@ -25,7 +25,9 @@ nav {
         }
         li {
             margin-right: 30px;
-            
+            a {
+                color: #FFF;
+            }
         }
         li:last-child {
             margin: 0;
@@ -47,6 +49,23 @@ nav {
                 border: 0.1px solid #FFF;
                 border-radius: 5px;
                 margin-left: 20px;
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+            
+            .user-area {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-right: 30px;
+                li#user-pic{
+                    a {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
             }
         }
     
@@ -90,7 +109,7 @@ nav {
             top: 0;
             height: 100%;
             width: 45vw !important;
-            padding: 1em;
+            padding: 1em 1em;
             right: -100vw;
             animation-duration: 1s;
             .nav-left, .nav-right {
@@ -98,12 +117,33 @@ nav {
             }
             li {
                 margin-right: 0;
+                margin-bottom: 8vh;
+                button { 
+                    margin-left: 0 !important;
+                }
             }
-            button { 
-                margin-left: 0 !important;
+            .nav-left{
+                margin-top: 5vh;
+                margin-bottom: 8vh;
             }
+            .nav-right {
+                .user-area {
+                    flex-direction: row-reverse;
+                    margin: 0;
+                    margin-bottom: 20vh;
+                    li {
+                        margin: 0;
+                    }
+                    li#user-pic {
+                        margin-right: 1em;
+                    }
+                }
+                
+            }
+            
         }
     }
+
     @keyframes showSidebar {
         from {right: -100vw;}
         to {right: 0;}
