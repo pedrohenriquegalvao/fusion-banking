@@ -1,0 +1,28 @@
+@use 'auxiliar/auxiliar' as aux;
+
+@include aux.resetDocument;
+
+body, .login-left, .login-right {
+    display: flex;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    .login-left {
+        background-color: #FFF;
+        width: 50vw;
+        align-items: center;
+        justify-content: center;
+        border-right: 1px solid #0302258a;
+        height: 505px;
+    }
+
+    .login-right {
+        background-color: rgba(0, 255, 0, 0.397);
+        width: 50vw;
+    }
+    
+}
