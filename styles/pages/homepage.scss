@@ -1,0 +1,105 @@
+@use '../auxiliar/auxiliar' as aux;
+
+@include aux.resetDocument;
+
+
+main {
+    margin: 0 auto 50px auto;
+    padding: 0 180px;
+    display: flex;
+    justify-content: space-between;
+    font-family: aux.$heebo;
+    .informacoes {
+
+        width: 600px;
+        .saldo {
+            display: grid;
+            grid-template-columns: 1.9fr 0.1fr;
+            grid-template-rows: 2fr;
+            grid-template-areas: 
+            "h1saldo icon"
+            "money money";
+            align-items: center;
+            grid-row-gap: 15px; 
+            width: 200px;
+            margin-bottom: 75px;
+            
+            h1,p {
+                font-weight: 300;
+            }
+            h1 {
+                grid-area: "h1saldo";
+                font-size: 30px;
+            }
+            img {
+                grid-area: "icon";
+                cursor: pointer;
+            }
+            p {
+                grid-area: "money";
+                font-size: 26px;
+                font-weight: 400;
+                color: aux.$azulroyal;
+            }
+        }
+        .extrato {
+            padding: 20px 30px 30px 30px;
+            background-color: aux.$azulclarinho;
+            box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+            h1 {
+                text-align: center;
+                margin-bottom: 20px;
+                font-size: 34px;
+                font-weight: 400;
+            }
+            .transacao {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                height: 110px;
+                img {
+                    margin-right: 6px;
+                }
+                .tipo-transacao {
+                    display: flex;
+                    align-items: center;
+                }
+                .info-transacao{
+                    display: flex;
+                    align-items: center;
+                    span:last-child {
+                        font-size: 13px;
+                        font-weight: 500;
+                    }
+                    .entrada, .saida {
+                        font-size: 16px;
+                        font-weight: 400;
+                        margin-right: 23px;
+                    }
+                    .entrada {
+                        color: green;
+                    }
+                    .saida {
+                        color: red;
+                    }
+                }
+            }
+            hr {
+                border-top: 2px solid #030225C7;
+                opacity: 78%;
+            }
+        }
+
+    }
+
+    .atalhos {
+        
+        background-color: red;
+        width: 400px;
+        h1 {
+            text-align: center;
+            font-size: 34px;
+            font-weight: 400;
+        }
+    }
+}

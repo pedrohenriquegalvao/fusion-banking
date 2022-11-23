@@ -1,4 +1,4 @@
-@use 'auxiliar/auxiliar' as aux;
+@use '../auxiliar/auxiliar' as aux;
 
 @include aux.resetDocument;
 
@@ -11,6 +11,7 @@ nav {
     padding: 0 180px 0 180px;
     font-family: aux.$heebo;
     font-weight: 300;
+    margin-bottom: 40px;
     .logo {
         margin-right: 55px;
     }

@@ -15,7 +15,8 @@
 <body>
     <section class="login-left">
         <div class="container-login-logo">
-            <img src="/img/logo-login.png" alt="">
+            <!-- <img src="/img/logo-login.png" alt=""> -->
+            <div class="logo-login"></div>
         </div>
     </section>
 
@@ -33,15 +34,17 @@
                 </div>
             </div>
 
-            <form class="container-inputs">
+            <form class="container-inputs" id="form-login">
                 <p><input type="text" name="cpf" id="cpf" placeholder="CPF (XX.XXX.XXX-XX)"></p>
                 <p><input type="email" name="email" id="email" placeholder="E-mail (exemplo@ex.com)"></p>
                 <p><input type="tel" name="fone" id="fone" placeholder="Telefone (XX)XXXXX-XXXX"></p>
                 <p><input type="password" name="senha" id="senha" placeholder="Senha"></p>
-                <p><input type="submit" value="Entrar"></p>
+                <p><input type="submit" value="Entrar" id="login"></p>
             </form>
 
         </div>
     </section>
+
+    <script src="/js/login.js"></script>
 </body>
 </html>
