@@ -94,11 +94,120 @@ main .informacoes .extrato hr {
   opacity: 78%;
 }
 main .atalhos {
-  background-color: red;
   width: 400px;
 }
 main .atalhos h1 {
   text-align: center;
   font-size: 34px;
   font-weight: 400;
+}
+main .atalhos .container-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .atalhos .container-cards .card-atalho {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+  background-color: #EEF2FF;
+  margin-top: 30px;
+  border-radius: 28px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.18);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1265px) {
+  main {
+    padding: 0 60px 0 60px;
+  }
+}
+@media screen and (max-width: 980px) {
+  main {
+    padding: 0 30px 0 30px;
+  }
+  .atalhos {
+    padding-top: 170px;
+    width: -webkit-fit-content !important;
+    width: -moz-fit-content !important;
+    width: fit-content !important;
+  }
+  .atalhos .card-atalho {
+    padding: 5px;
+    width: 100px !important;
+    height: 100px !important;
+    margin-top: 40px !important;
+  }
+  .atalhos .card-atalho img {
+    width: 60px;
+  }
+}
+@media screen and (max-width: 720px) {
+  main {
+    flex-direction: column;
+  }
+  .informacoes {
+    width: 90vw !important;
+  }
+  .atalhos {
+    order: 1;
+    padding-top: 0;
+    margin-top: 50px;
+    width: 100% !important;
+  }
+  .atalhos .container-cards {
+    flex-direction: row !important;
+    justify-content: space-between;
+  }
+  .atalhos .container-cards .card-atalho {
+    width: 150px !important;
+    height: 150px !important;
+  }
+  .atalhos .container-cards .card-atalho img {
+    width: 90px;
+  }
+}
+@media screen and (max-width: 560px) {
+  main {
+    align-items: center;
+  }
+  .extrato .transacao .tipo-transacao {
+    width: 100px;
+  }
+  .extrato .transacao img {
+    width: 25px;
+  }
+  .atalhos {
+    width: 90% !important;
+  }
+  .atalhos .container-cards {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    flex-wrap: wrap !important;
+  }
+}
+@media screen and (max-width: 432px) {
+  .atalhos {
+    width: 100% !important;
+  }
+  .atalhos .container-cards {
+    padding-left: 25%;
+    padding-right: 20%;
+  }
+}
+@media screen and (max-width: 360px) {
+  .extrato {
+    padding: 20px 10px 30px 10px !important;
+  }
+  .extrato .transacao .info-transacao .entrada, .extrato .transacao .info-transacao .saida {
+    margin-right: 5px !important;
+  }
+  .atalhos .container-cards {
+    padding-left: 20% !important;
+    padding-right: 5% !important;
+  }
 }/*# sourceMappingURL=homepage.css.map */
