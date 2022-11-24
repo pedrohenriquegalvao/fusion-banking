@@ -60,9 +60,11 @@ body .login-right .content .tab-options .tab-option {
   text-align: center;
   padding: 3px;
   cursor: pointer;
+  color: rgba(0, 0, 0, 0.412);
 }
-body .login-right .content .tab-options .fisica {
+body .login-right .content .tab-options .selected {
   border-bottom: 1px solid #030225;
+  color: #0F38C9;
 }
 body .login-right .content .tab-options span {
   font-family: "Heebo", sans-serif;

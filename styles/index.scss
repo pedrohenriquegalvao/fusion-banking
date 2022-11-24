@@ -54,9 +54,11 @@ body {
                     text-align: center;
                     padding: 3px;
                     cursor: pointer;
+                    color: rgba(0, 0, 0, 0.412);
                 }
-                .fisica {
+                .selected {
                     border-bottom: 1px solid aux.$azulmarinho;
+                    color: aux.$azulpadrao;
                 }
                 span {
                     font-family: aux.$heebo;
