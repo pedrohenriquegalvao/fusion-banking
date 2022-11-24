@@ -1,0 +1,54 @@
+@use '../../auxiliar/auxiliar' as aux;
+
+@include aux.resetDocument;
+
+.home {
+    display: block;
+    padding: 0 180px;
+}
+
+main  {
+    padding: 0 180px;
+    display: flex;
+
+    // ----- PARTE ESQUERDA (PROGRESSO) ------
+    .progress{
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        .round {
+            position: relative;
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            background-color: transparent;
+            color: #000;
+            border: 1px solid aux.$azulmarinho;
+        }
+        .round-active {
+            background-color: aux.$azulmarinho;
+            color: #FFF;
+        }
+        .step-number {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    // ----- PARTE DIREITA (PAGAMENTO EM SI) -----
+    .payment-content {
+
+        .form {
+            //background-color: aquamarine;
+        }
+    }
+    
+}
+
+
+
+
+

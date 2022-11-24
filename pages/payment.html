@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="../styles/navbar/navbar.css">
+    <link rel="stylesheet" href="/styles/pages/payment/payment.css">
+
+    <title>Boleto</title>
+</head>
+<body>
+    <nav id="navbar">
+        <div class="logo">
+            <img src="../img/logo-navbar.png" alt="Logo do site Fusion Banking">
+        </div>
+
+        <div class="options">
+
+            <ul class="nav-left">
+                <li><a href="">Benefícios</a></li>
+                <li><a href="">Investimentos</a></li>
+                <li><a href="">Transações</a></li>
+            </ul>
+
+            <ul class="nav-right">
+                <div class="user-area">
+                    <li><a href="">Olá, Pedro!</a></li>
+                    <li id="user-pic"><a href=""><img src="/img/pedro.jpeg" alt=""></a></li>
+                </div>
+                <li><button id="logout">SAIR</button></li>
+            </ul>
+            
+        </div>
+
+        <div class="burguer" onclick="toggleSidebar()">
+            <i class="fa-solid fa-bars nav-icon"></i>
+        </div>
+        
+    </nav>
+    <a href="/pages/homepage.html" class="home"><i class="fa-solid fa-chevron-left"></i>Home</a>
+    <main>
+        <!-- Botão HOME-->
+        
+
+        <!-- Passos e Barra de progresso -->
+        <section class="progress">
+            <div class="round round-active">
+                <span class="step-number">1</span>
+            </div>
+            <div class="round">
+                <span class="step-number">2</span>
+            </div>
+            <div class="round">
+                <span class="step-number">3</span>
+            </div>
+        </section>
+        <!-- Conteúdo a ser inserido posteriormente -->
+        <section class="payment-content">
+
+            <h1>Pagamento de Boleto</h1>
+            <hr>
+            <!-- FORMULARIO -->
+            <form action="#" class="form">
+    
+                <!-- PASSO 1 -->
+                <div class="form-step form-step-active">
+    
+                    <div class="container-passo1">
+    
+                        <div class="container-inputs">
+                            <p>Insira o número do código de barras</p>
+                            <input type="text" name="codigo1" id="codigo1" class="input-barras">
+                            <input type="text" name="codigo2" id="codigo2" class="input-barras">
+                            <input type="text" name="codigo3" id="codigo3" class="input-barras">
+                            <input type="text" name="codigo4" id="codigo4" class="input-barras">
+                        </div>
+                        <p>Valor do pagamento: <span id="valor-boleto">R$75,50</span></p>
+                        <div class="payment-id">
+                            <p>Identificação do pagamento</p>
+                            <input type="text" name="nome-pagamento" id="nome-pagamento" placeholder="Insira o nome desejado">
+                        </div>
+    
+                    </div>
+                    
+                    <button class="continue">Continuar</button>
+    
+                </div>
+    
+                <!-- PASSO 2 -->
+                <div class="form-step">
+                    <div class="container-passo2">
+    
+                        <table>
+                            <tr>
+                                <td>Representação numérica do código de barras:</td>
+                                <td id="codigo-barras">8446774800876 55344577200 34144143  1344144</td>
+                            </tr>
+                            <tr>
+                                <td>Data de débito:</td>
+                                <td id="data">24/11/2022</td>
+                            </tr>
+                            <tr>
+                                <td>Descrição:</td>
+                                <td id="descricao">Débido em conta</td>
+                            </tr>
+                            <tr>
+                                <td>Valor:</td>
+                                <td id="valor">R$XX,XX</td>
+                            </tr>
+                            <tr>
+                                <td>Identificação do pagamento:</td>
+                                <td id="identificacao">Conta de Luz</td>
+                            </tr>
+                        </table>
+    
+                    </div>
+    
+                    <button class="continue">Continuar</button>
+    
+                </div>
+    
+                <!-- PASSO 3 -->
+                <div class="form-step">
+                    
+                    <div class="container-passo3">
+                        <h2>Digite sua senha de transação para finalizar o pagamento</h2>
+                        <div class="container-input-senha">
+                            <label for="senha-transacao">Senha</label>
+                            <input type="password" name="senha-transacao" id="senha-transacao"></div>
+                    </div>
+    
+                    <button class="finish">Finalizar</button>
+                </div>
+    
+            </form>
+
+        </section>
+
+
+    </main>
+
+    <script src="../js/navbar.js"></script>
+    
+</body>
+</html>
