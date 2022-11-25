@@ -51,13 +51,17 @@
         <section class="progress">
             <div class="round round-active">
                 <span class="step-number">1</span>
+                
             </div>
+            <p>Preenchimento</p>
             <div class="round">
                 <span class="step-number">2</span>
             </div>
+            <p>Confirmação</p>
             <div class="round">
                 <span class="step-number">3</span>
             </div>
+            <p>Pagamento</p>
         </section>
         <!-- Conteúdo a ser inserido posteriormente -->
         <section class="payment-content">
@@ -79,15 +83,17 @@
                             <input type="text" name="codigo3" id="codigo3" class="input-barras">
                             <input type="text" name="codigo4" id="codigo4" class="input-barras">
                         </div>
-                        <p>Valor do pagamento: <span id="valor-boleto">R$75,50</span></p>
+                        <p class="valor-boleto">Valor do pagamento: <span id="valor-boleto">R$75,50</span></p>
                         <div class="payment-id">
-                            <p>Identificação do pagamento</p>
+                            <p>Ident. do pagamento</p>
                             <input type="text" name="nome-pagamento" id="nome-pagamento" placeholder="Insira o nome desejado">
                         </div>
     
                     </div>
                     
-                    <button class="continue">Continuar</button>
+                    <div class="step-btn">
+                        <button class="continue">Continuar</button>
+                    </div>
     
                 </div>
     
@@ -120,8 +126,10 @@
     
                     </div>
     
-                    <button class="continue">Continuar</button>
-    
+                    <div class="step-btn">
+                        <button class="continue">Continuar</button>
+                    </div>
+                    
                 </div>
     
                 <!-- PASSO 3 -->
@@ -134,7 +142,10 @@
                             <input type="password" name="senha-transacao" id="senha-transacao"></div>
                     </div>
     
-                    <button class="finish">Finalizar</button>
+                    <div class="step-btn">
+                        <button class="finish">Finalizar</button>
+                    </div>
+                    
                 </div>
     
             </form>

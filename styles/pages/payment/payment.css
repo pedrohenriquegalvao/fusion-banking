@@ -19,10 +19,13 @@ main {
   display: flex;
 }
 main .progress {
+  background-color: red;
   padding: 5px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  align-items: center;
+  margin-right: 80px;
 }
 main .progress .round {
   position: relative;
@@ -42,4 +45,83 @@ main .progress .step-number {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+main .progress p {
+  background-color: aqua;
+  position: relative;
+}
+main .progress p::before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 30px;
+  top: 50%;
+  right: 50%;
+  background-color: blue;
+}
+main .progress p:last-child::before {
+  display: none;
+}
+main .payment-content {
+  font-family: "Heebo", sans-serif;
+  width: 60vw;
+}
+main .payment-content h1 {
+  font-size: 36px;
+  font-weight: normal;
+}
+main .payment-content hr {
+  border: 2px solid #EEF2FF;
+}
+main .form .step-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .form .step-btn button {
+  background-color: #051960;
+  color: white;
+  text-transform: uppercase;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  border: none;
+  border-radius: 5px;
+  padding: 14px 52px;
+}
+main .form .step-btn .finish {
+  background-color: #0F38C9;
+}
+main .form .container-passo1 {
+  padding: 60px 0;
+  font-family: "Heebo", sans-serif;
+}
+main .form .container-passo1 .container-inputs {
+  margin-bottom: 40px;
+}
+main .form .container-passo1 .container-inputs p {
+  margin-bottom: 1em;
+}
+main .form .container-passo1 .container-inputs input {
+  width: 15%;
+  height: 1.3rem;
+  border: 1px solid rgba(3, 2, 37, 0.3);
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.18);
+}
+main .form .container-passo1 p.valor-boleto {
+  margin-bottom: 40px;
+}
+main .form .container-passo1 p.valor-boleto span#valor-boleto {
+  color: #051960;
+  margin-left: 1.3em;
+}
+main .form .container-passo1 .payment-id {
+  display: flex;
+}
+main .form .container-passo1 .payment-id input {
+  width: 15%;
+  height: 1.3rem;
+  border: 1px solid rgba(3, 2, 37, 0.3);
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.18);
+  margin-left: 2em;
 }/*# sourceMappingURL=payment.css.map */
