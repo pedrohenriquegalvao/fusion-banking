@@ -49,19 +49,24 @@
 
         <!-- Passos e Barra de progresso -->
         <section class="progress">
-            <div class="round round-active">
-                <span class="step-number">1</span>
-                
+            <div class="wrapper-round">
+                <div class="round round-active">
+                    <span class="step-number">1</span>
+                </div>
+                <p>Preenchimento</p>
             </div>
-            <p>Preenchimento</p>
-            <div class="round">
-                <span class="step-number">2</span>
+            <div class="wrapper-round">
+                <div class="round">
+                    <span class="step-number">2</span>
+                </div>
+                <p>Confirmação</p>
             </div>
-            <p>Confirmação</p>
-            <div class="round">
-                <span class="step-number">3</span>
+            <div class="wrapper-round">
+                <div class="round">
+                    <span class="step-number">3</span>
+                </div>
+                <p>Pagamento</p>
             </div>
-            <p>Pagamento</p>
         </section>
         <!-- Conteúdo a ser inserido posteriormente -->
         <section class="payment-content">
@@ -101,7 +106,7 @@
                 <div class="form-step">
                     <div class="container-passo2">
     
-                        <table>
+                        <table border="1">
                             <tr>
                                 <td>Representação numérica do código de barras:</td>
                                 <td id="codigo-barras">8446774800876 55344577200 34144143  1344144</td>
@@ -112,7 +117,7 @@
                             </tr>
                             <tr>
                                 <td>Descrição:</td>
-                                <td id="descricao">Débido em conta</td>
+                                <td id="descricao">Débito em conta</td>
                             </tr>
                             <tr>
                                 <td>Valor:</td>
@@ -136,10 +141,11 @@
                 <div class="form-step">
                     
                     <div class="container-passo3">
-                        <h2>Digite sua senha de transação para finalizar o pagamento</h2>
+                        <p>Digite sua senha de transação para finalizar o pagamento</p>
                         <div class="container-input-senha">
                             <label for="senha-transacao">Senha</label>
-                            <input type="password" name="senha-transacao" id="senha-transacao"></div>
+                            <input type="password" name="senha-transacao" id="senha-transacao">
+                        </div>
                     </div>
     
                     <div class="step-btn">

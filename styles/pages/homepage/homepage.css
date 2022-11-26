@@ -36,9 +36,10 @@ main .informacoes .saldo h1 {
   grid-area: "h1saldo";
   font-size: 30px;
 }
-main .informacoes .saldo img {
+main .informacoes .saldo i {
   grid-area: "icon";
   cursor: pointer;
+  font-size: 22px;
 }
 main .informacoes .saldo p {
   grid-area: "money";

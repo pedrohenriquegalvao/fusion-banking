@@ -34,10 +34,22 @@
             </div>
 
             <form class="container-inputs" id="form-login">
-                <p id="cpf"><input type="text" name="cpf" id="" placeholder="CPF (123.456.789-01)"></p>
-                <p id="email"><input type="text" name="email" id="" placeholder="E-mail (exemplo@ex.com)"></p>
-                <p id="fone"><input type="tel" name="fone" id="" placeholder="Telefone (00)90000-0000"></p>
-                <p id="senha"><input type="password" name="senha" id="" placeholder="Senha"></p>
+                <p id="cpf">
+                    <input type="text" name="cpf" id="" placeholder="CPF (123.456.789-01)">
+                    <span id="span-cpf">CPF inválido, por favor siga o padrão 123.456.789-01</span>
+                </p>
+                <p id="email">
+                    <input type="text" name="email" id="" placeholder="E-mail (exemplo@ex.com)">
+                    <span id="span-email">Email inválido, por favor siga o padrão exemplo@ex.com</span>
+                </p>
+                <p id="fone">
+                    <input type="tel" name="fone" id="" placeholder="Telefone (00)90000-0000">
+                    <span id="span-fone">Fone inválido, por favor siga o padrão (00)90000-0000</span>
+                </p>
+                <p id="senha">
+                    <input type="password" name="senha" id="" placeholder="Senha">
+                    <span id="span-senha">Senha deve ter ao menos 1 letra, 1 número e 5 caracteres no total</span>
+                </p>
                 <p id="button-login"><input type="submit" value="Entrar" id="login"></p>
             </form>
 

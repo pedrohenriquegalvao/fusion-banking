@@ -12,6 +12,13 @@
 .home {
   display: block;
   padding: 0 180px;
+  font-family: "Inter", sans-serif;
+  color: #0F38C9;
+}
+.home i {
+  transform: translateY(-1px);
+  font-size: 14px;
+  margin-right: 3px;
 }
 
 main {
@@ -19,15 +26,23 @@ main {
   display: flex;
 }
 main .progress {
-  background-color: red;
-  padding: 5px;
+  padding: 20px 5px;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   margin-right: 80px;
 }
-main .progress .round {
+main .progress .wrapper-round {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-family: "Inter", sans-serif;
+  font-weight: 200;
+}
+main .progress .wrapper-round .round {
   position: relative;
   width: 90px;
   height: 90px;
@@ -35,31 +50,29 @@ main .progress .round {
   background-color: transparent;
   color: #000;
   border: 1px solid #030225;
+  margin-bottom: 7px;
 }
-main .progress .round-active {
+main .progress .wrapper-round .round-active {
   background-color: #030225;
   color: #FFF;
 }
-main .progress .step-number {
+main .progress .wrapper-round .step-number {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-main .progress p {
-  background-color: aqua;
-  position: relative;
-}
-main .progress p::before {
+main .progress .wrapper-round::after {
   content: "";
   position: absolute;
-  width: 5px;
-  height: 30px;
-  top: 50%;
+  width: 1px;
+  height: 255px;
+  top: 110%;
   right: 50%;
-  background-color: blue;
+  background-color: #030225;
+  opacity: 30%;
 }
-main .progress p:last-child::before {
+main .progress .wrapper-round:last-child::after {
   display: none;
 }
 main .payment-content {
@@ -71,9 +84,17 @@ main .payment-content h1 {
   font-weight: normal;
 }
 main .payment-content hr {
-  border: 2px solid #EEF2FF;
+  border: 1px solid #EEF2FF;
+}
+main .form input {
+  padding-left: 10px;
+}
+main .form input:focus {
+  outline: none;
+  border: 1.2px solid rgba(15, 55, 201, 0.662745098);
 }
 main .form .step-btn {
+  margin-top: 85px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -89,11 +110,17 @@ main .form .step-btn button {
   border-radius: 5px;
   padding: 14px 52px;
 }
+main .form .step-btn button:hover {
+  cursor: pointer;
+}
 main .form .step-btn .finish {
   background-color: #0F38C9;
 }
+main .form .form-step {
+  margin-bottom: 85px;
+}
 main .form .container-passo1 {
-  padding: 60px 0;
+  padding-top: 60px;
   font-family: "Heebo", sans-serif;
 }
 main .form .container-passo1 .container-inputs {
@@ -119,9 +146,44 @@ main .form .container-passo1 .payment-id {
   display: flex;
 }
 main .form .container-passo1 .payment-id input {
-  width: 15%;
+  width: 20%;
   height: 1.3rem;
   border: 1px solid rgba(3, 2, 37, 0.3);
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.18);
   margin-left: 2em;
+}
+main .form .container-passo2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .form .container-passo2 table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  width: 100%;
+}
+main .form .container-passo2 table tr td {
+  padding: 10px 15px;
+}
+main .form .container-passo3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .form .container-passo3 p {
+  margin-bottom: 28px;
+}
+main .form .container-passo3 .container-input-senha {
+  position: relative;
+}
+main .form .container-passo3 .container-input-senha label {
+  position: absolute;
+  transform: translate(-130%, 4px);
+  color: rgba(0, 0, 0, 0.47);
+}
+main .form .container-passo3 .container-input-senha input {
+  width: 200px;
+  height: 30px;
+  border: 1px solid rgba(3, 2, 37, 0.3);
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.18);
 }/*# sourceMappingURL=payment.css.map */

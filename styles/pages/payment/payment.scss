@@ -5,6 +5,13 @@
 .home {
     display: block;
     padding: 0 180px;
+    font-family: aux.$inter;
+    color: aux.$azulpadrao;
+    i {
+        transform: translateY(-1px);
+        font-size: 14px;
+        margin-right: 3px;
+    }
 }
 
 main  {
@@ -13,46 +20,56 @@ main  {
 
     // ----- PARTE ESQUERDA (PROGRESSO) ------
     .progress{
-        background-color: red;
-        padding: 5px;
+        
+        padding: 20px 5px;
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: space-around;
         align-items: center;
         margin-right: 80px;
-        .round {
+        .wrapper-round {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             position: relative;
-            width: 90px;
-            height: 90px;
-            border-radius: 50%;
-            background-color: transparent;
-            color: #000;
-            border: 1px solid aux.$azulmarinho;
-        }
-        .round-active {
-            background-color: aux.$azulmarinho;
-            color: #FFF;
-        }
-        .step-number {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-        p {
-            background-color: aqua;
-            position: relative;
-            &::before {
+            font-family: aux.$inter;
+            font-weight: 200;
+            .round {
+                position: relative;
+                width: 90px;
+                height: 90px;
+                border-radius: 50%;
+                background-color: transparent;
+                color: #000;
+                border: 1px solid aux.$azulmarinho;
+                margin-bottom: 7px;
+            }
+            .round-active {
+                background-color: aux.$azulmarinho;
+                color: #FFF;
+            }
+            .step-number {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            
+            
+            &::after {
                 content: "";
                 position: absolute;
-                width: 5px;
-                height: 30px;
-                top:50%;
+                width: 1px;
+                height: 255px;
+                top:110%;
                 right: 50%;
-                background-color: blue;
+                background-color: #030225;
+                opacity: 30%;
             }
-            &:last-child::before{
-                display: none;
+            
+            &:last-child::after {          
+                display: none; 
             }
         }
         
@@ -67,13 +84,21 @@ main  {
             font-weight: normal;
         }
         hr {
-            border: 2px solid aux.$azulclarinho;
+            border: 1px solid aux.$azulclarinho;
         }
     }
     .form {
         
-        // Configurações dos botões de cada passo do pagamento
+        input {
+            padding-left: 10px;
+            &:focus {
+                outline: none;
+                border: 1.2px solid #0f37c9a9;
+            }
+        }
+        // Configurações BOTÕES de cada passo do pagamento
         .step-btn {
+            margin-top: 85px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -87,14 +112,20 @@ main  {
                 border: none;
                 border-radius: 5px;
                 padding: 14px 52px;
+                &:hover {
+                    cursor: pointer;
+                }
             }
             .finish {
                 background-color: aux.$azulpadrao;
             }
         }
         // PASSO 1 DO PAGAMENTO - Preenchimento
+        .form-step {
+            margin-bottom: 85px;
+        }
         .container-passo1 {
-            padding: 60px 0;
+            padding-top: 60px;
             font-family: aux.$heebo;
             .container-inputs {
                 margin-bottom: 40px;
@@ -119,7 +150,7 @@ main  {
             .payment-id {
                 display: flex;
                 input {
-                    width: 15%;
+                    width: 20%;
                     height: 1.3rem;
                     border: 1px solid rgba(3, 2, 37, 0.3);
                     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.18);
@@ -127,7 +158,51 @@ main  {
                 }
             }
         }
+        // PASSO 2 DO PAGAMENTO - Confirmação
+        .container-passo2 {
+            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            table {
+                border-spacing: 0;
+                border-collapse: collapse;
+                width: 100%;
+                
+                tr {
 
+                    td {
+                        padding: 10px 15px;
+                    }
+                }
+            }
+        }
+
+        // PASSO 3 DO PAGAMENTO - Inserir SENHA
+        .container-passo3{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            p {
+                margin-bottom: 28px;
+            }
+            .container-input-senha {
+                position: relative;
+                label {
+                    position: absolute;
+                    transform: translate(-130%, 4px);
+                    
+                    color: rgba(0, 0, 0, 0.47);
+                }
+                input {
+                    width: 200px;
+                    height: 30px;
+                    border: 1px solid rgba(3, 2, 37, 0.3);
+                    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.18);
+                }
+            }
+        }
+        
 
     }
     

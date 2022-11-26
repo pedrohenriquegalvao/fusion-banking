@@ -73,6 +73,7 @@ body {
                 align-items: center;
                 p {
                     display: flex;
+                    flex-direction: column;
                     align-items: center;
                     justify-content: center;
                     margin-bottom: 40px;
@@ -101,6 +102,11 @@ body {
                         font-size: 1.2em;
                         font-weight: 300;
                     }
+                    span {
+                        display: none;
+                        color: red;
+                        font-size: 13px;
+                    }
                 }
             }
         }
@@ -111,12 +117,10 @@ body {
 // ----- RESPONSIVIDADE -----
 @media screen and (min-width:1200px){
     .login-right {
-        //background-color: red;
         .tab-option {
             width: calc(350px / 2) !important;
         }
         form.container-inputs {
-            //background-color: yellow;
             p {
                 width: 360px !important;
             }
@@ -129,7 +133,6 @@ body {
         width: 50vw;
     }
     .login-left {
-        //background-color: red;
         width: 30vw !important;
     }
     .login-right {

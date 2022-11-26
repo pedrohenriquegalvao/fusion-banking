@@ -31,9 +31,10 @@ main {
                 grid-area: "h1saldo";
                 font-size: 30px;
             }
-            img {
+            i {
                 grid-area: "icon";
                 cursor: pointer;
+                font-size: 22px;
             }
             p {
                 grid-area: "money";
