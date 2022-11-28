@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap");
+/* ----- FONTES -----*/
+/* ----- CORES -----*/
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none !important;
+  list-style: none !important;
+}
+
+.home {
+  display: block;
+  padding: 0 180px;
+  font-family: "Inter", sans-serif;
+  color: #0F38C9;
+}
+.home i {
+  transform: translateY(-1px);
+  font-size: 14px;
+  margin-right: 3px;
+}
+
+main#content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Heebo", sans-serif;
+  padding-bottom: 40px;
+}
+main#content h1 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+main#content .form-emprestimo {
+  background-color: #EEF2FF;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 35px 20px;
+  width: 550px;
+}
+main#content .form-emprestimo h2 {
+  margin-bottom: 15px;
+  font-weight: normal;
+  font-size: 20px;
+}
+main#content .form-emprestimo .container-inputs {
+  display: flex;
+  flex-direction: column;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 100px;
+}
+main#content .form-emprestimo .container-inputs input, main#content .form-emprestimo .container-inputs select {
+  border: 1px solid rgba(3, 2, 37, 0.3);
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.18);
+}
+main#content .form-emprestimo .container-inputs input:focus, main#content .form-emprestimo .container-inputs select:focus {
+  outline: none;
+  border: 1.2px solid rgba(15, 55, 201, 0.662745098);
+}
+main#content .form-emprestimo .container-inputs input {
+  width: 300px;
+  height: 2rem;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+main#content .form-emprestimo .container-inputs label, main#content .form-emprestimo .container-inputs p {
+  font-weight: 300;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+main#content .form-emprestimo .container-inputs select {
+  width: 180px;
+  padding: 5px 5px 5px 10px;
+  margin-bottom: 50px;
+}
+main#content .form-emprestimo .container-inputs p span#valor-parcelas {
+  color: #051960;
+  margin-left: 1.3em;
+}
+main#content .form-emprestimo input[type=submit] {
+  background-color: #051960;
+  color: white;
+  text-transform: uppercase;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  border: none;
+  border-radius: 5px;
+  padding: 14px 52px;
+}
+main#content .form-emprestimo input[type=submit]:hover {
+  cursor: pointer;
+}/*# sourceMappingURL=loan.css.map */

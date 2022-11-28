@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="../styles/navbar/navbar.css">
+    <link rel="stylesheet" href="/styles/pages/loan/loan.css">
+
+    
+    <title>Empréstimo</title>
+</head>
+<body>
+    <nav id="navbar">
+        <div class="logo">
+            <img src="../img/logo-navbar.png" alt="Logo do site Fusion Banking" id="logo-navbar">
+        </div>
+
+        <div class="options">
+
+            <ul class="nav-left">
+                <li><a href="">Benefícios</a></li>
+                <li><a href="">Investimentos</a></li>
+                <li><a href="">Transações</a></li>
+            </ul>
+
+            <ul class="nav-right">
+                <div class="user-area">
+                    <li><a href="">Olá, Pedro!</a></li>
+                    <li id="user-pic"><a href=""><img src="/img/pedro.jpeg" alt=""></a></li>
+                </div>
+                <li><button id="logout">SAIR</button></li>
+            </ul>
+            
+        </div>
+
+        <div class="burguer" onclick="toggleSidebar()">
+            <i class="fa-solid fa-bars nav-icon"></i>
+        </div>
+        
+    </nav>
+    <a href="/pages/homepage.html" class="home"><i class="fa-solid fa-chevron-left"></i>Home</a>
+    <main id="content">
+
+        <h1>Empréstimo FAZER CLASSE POO para empréstimos E TDD TESTE E ASYNC</h1>
+
+        <form action="" class="form-emprestimo">
+            
+            <h2>De quanto precisa?</h2>
+    
+            <div class="container-inputs">
+                <input type="number" name="valor-emprestimo" id="valor-emprestimo" placeholder="Insira o valor desejado">
+                <label for="parcelas">Número de parcelas</label>
+                <select name="parcelas" id="parcelas">
+                    <option value="a">a</option>
+                    <option value="b">b</option>
+                    <option value="c">c</option>
+                </select>
+                <p>Valor da parcela por mês: <span id="valor-parcelas">R$75,50</span></p>
+            </div>
+
+            <input type="submit" value="Realizar Empréstimo">
+
+        </form>
+        
+    </main>
+
+    <script src="/js/navbar.js"></script>
+</body>

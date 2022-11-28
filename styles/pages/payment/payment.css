@@ -130,7 +130,7 @@ main .form .container-passo1 .container-inputs p {
   margin-bottom: 1em;
 }
 main .form .container-passo1 .container-inputs input {
-  width: 15%;
+  width: 140px;
   height: 1.3rem;
   border: 1px solid rgba(3, 2, 37, 0.3);
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.18);
@@ -146,7 +146,7 @@ main .form .container-passo1 .payment-id {
   display: flex;
 }
 main .form .container-passo1 .payment-id input {
-  width: 20%;
+  width: 180px;
   height: 1.3rem;
   border: 1px solid rgba(3, 2, 37, 0.3);
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.18);

@@ -1,4 +1,6 @@
 let navbar = document.querySelector('#navbar');
+let navLogo = document.getElementById('logo-navbar');
+
 let options = document.querySelector('.options');
 let showSidebar = false;
 let burguer = document.querySelector('.burguer');
@@ -6,7 +8,7 @@ let navIcon = document.querySelector('.nav-icon');
 
 let mainContent = document.querySelector('#content');
 
-let buttonLogout = document.querySelector('#logout');
+let buttonLogout = document.getElementById('logout');
 
 function toggleSidebar() {
     showSidebar = !showSidebar;
@@ -37,4 +39,8 @@ window.addEventListener('resize', () => {
 
 buttonLogout.addEventListener('click', () => {
     window.location.href = '/index.html';
+});
+
+navLogo.addEventListener('click', () => {
+    window.location.href = '/pages/homepage.html';
 });
