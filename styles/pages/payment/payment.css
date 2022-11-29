@@ -21,6 +21,12 @@
   margin-right: 3px;
 }
 
+.alerta {
+  display: none;
+  color: red;
+  font-size: 13px;
+}
+
 main {
   padding: 0 180px;
   display: flex;

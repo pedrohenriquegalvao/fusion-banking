@@ -81,24 +81,28 @@
                 <div class="form-step form-step-active">
     
                     <div class="container-passo1">
-    
+                        
                         <div class="container-inputs">
                             <p>Insira o número do código de barras</p>
-                            <input type="text" name="codigo1" id="codigo1" class="input-barras">
+                            <input type="text" name="codigo1" id="codigo1" class="input-barras" pattern="/^[0-9]+$/">
                             <input type="text" name="codigo2" id="codigo2" class="input-barras">
                             <input type="text" name="codigo3" id="codigo3" class="input-barras">
                             <input type="text" name="codigo4" id="codigo4" class="input-barras">
+                            <br>
+                            <span class="alerta" id="span-codigo-barras">Todos os campos devem estar preenchidos com valores numéricos.</span>
                         </div>
-                        <p class="valor-boleto">Valor do pagamento: <span id="valor-boleto">R$75,50</span></p>
+                        <p class="valor-boleto">Valor do pagamento: <span id="valor-boleto"></span></p>
                         <div class="payment-id">
-                            <p>Ident. do pagamento</p>
+                            <p>Identificação do pagamento</p>
                             <input type="text" name="nome-pagamento" id="nome-pagamento" placeholder="Insira o nome desejado">
+                            <br>
+
                         </div>
-    
+                        <span class="alerta" id="span-nome-boleto">O nome do boleto não pode estar vazio.</span>
                     </div>
                     
                     <div class="step-btn">
-                        <button class="continue">Continuar</button>
+                        <button class="continue" id="btn-cont1">Continuar</button>
                     </div>
     
                 </div>
@@ -163,6 +167,6 @@
     </main>
 
     <script src="/js/navbar.js"></script>
-    
+    <script src="/js/payment.js"></script>
 </body>
 </html>
