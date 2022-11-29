@@ -1,5 +1,6 @@
 let buttonStep1 = document.getElementById('btn-cont1');
-
+let buttonStep2 = document.getElementById('btn-cont2');
+let buttonFinish = document.getElementById('btn-finish');
 let containerPasso1 = document.getElementsByClassName('container-passo1');
 
 let hoje = () => {
@@ -37,8 +38,8 @@ class Boleto {
 
 let valorBoleto = Math.floor(Math.random() * (400 - 70 + 1) + 70);
 
-buttonStep1.addEventListener('click', (e) => {
-    e.preventDefault();
+buttonStep1.addEventListener('click', (evento) => {
+    evento.preventDefault();
     resetStyles();
     const codigo1 = document.getElementById('codigo1').value;
     const codigo2 = document.getElementById('codigo2').value;
@@ -69,14 +70,48 @@ buttonStep1.addEventListener('click', (e) => {
         document.getElementById('data').innerHTML = boleto.data;
         document.getElementById('valor').innerHTML = `R$${boleto.valor},00`;
         document.getElementById('identificacao').innerHTML = boleto.nome;
-    }
+        
 
-    
-     
-    
-    
+
+        /*
+        LÓGICA DISPLAY BLOCK PASSO 2
+        */
+
+
+
+    }
 });
+
+buttonStep2.addEventListener("click", (evento) => {
+    evento.preventDefault();
+    console.log("botaopasso2");
+
+    /*
+        LÓGICA DISPLAY BLOCK PASSO 3
+    */
+})
+
+buttonFinish.addEventListener("click", (evento) => {
+    evento.preventDefault();
+    const senha = document.getElementById('senha-transacao').value;
+    if (!/^[0-9]{4}$/.test(senha)) { // Exatamente 4 caracteres numéricos
+        console.log("laje")
+
+        /*
+        LÓGICA span de alerta senha invalida
+        */
+
+    } else {
+
+        /*
+        LÓGICA com assync e await para voltar para home
+        */
+
+    }
+});
+
 
 function resetStyles() {
     document.getElementById('span-codigo-barras').style.display = "none";
+    document.getElementById('span-nome-boleto').style.display = "none";
 }
