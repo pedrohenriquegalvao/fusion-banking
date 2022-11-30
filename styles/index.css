@@ -43,11 +43,13 @@ body .login-right h1, body .login-right h2 {
 body .login-right h1 {
   font-size: 40px;
   margin-bottom: 30px;
+  text-align: center;
 }
 body .login-right h2 {
   font-size: 36px;
   color: #4B4B4B;
   margin-bottom: 50px;
+  text-align: center;
 }
 body .login-right .content .tab-options {
   display: flex;
@@ -168,9 +170,17 @@ body .login-right .content form.container-inputs p span {
     width: 175px !important;
   }
   body .login-right form.container-inputs p {
-    width: 360px !important;
+    width: 90vw !important;
   }
   body .login-right form.container-inputs input[type=submit] {
     width: 200px !important;
+  }
+}
+@media screen and (max-width: 506px) {
+  .login-right h1 {
+    font-size: 30px !important;
+  }
+  .login-right h2 {
+    font-size: 24px !important;
   }
 }/*# sourceMappingURL=index.css.map */

@@ -48,27 +48,27 @@
 
         <h1>Empréstimo</h1>
 
-        <form action="" class="form-emprestimo">
+        <form action="" class="form-emprestimo" id="form-emprestimo">
             
             <h2>De quanto precisa?</h2>
     
             <div class="container-inputs">
-                <input type="number" name="valor-emprestimo" id="valor-emprestimo" placeholder="Insira o valor desejado">
+                <input type="number" name="valor-emprestimo" id="valor-emprestimo" placeholder="Insira o valor desejado" value="500" min="500" >
                 <label for="parcelas">Número de parcelas</label>
                 <select name="parcelas" id="parcelas">
                     <option value="6">6</option>
                     <option value="12">12</option>
                     <option value="24">24</option>
                     <option value="48">48</option>
-                </select>
-                <p>Valor da parcela por mês: <span id="valor-parcelas">R$75,50</span></p>
+                </select>   
             </div>
-
-            <input type="submit" value="Realizar Empréstimo">
+            <p>Valor da parcela por mês: <span id="valor-parcelas">R$75,50</span></p>
+            <input type="submit" value="Realizar Empréstimo" id="submit-emprestimo">
 
         </form>
         
     </main>
  
     <script src="/js/navbar.js"></script>
+    <script src="/js/loan.js"></script>
 </body>

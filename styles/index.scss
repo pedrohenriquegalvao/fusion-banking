@@ -36,11 +36,13 @@ body {
         h1 {
             font-size: 40px;
             margin-bottom: 30px;
+            text-align: center;
         } 
         h2 {
             font-size: 36px;
             color: #4B4B4B;
             margin-bottom: 50px;
+            text-align: center;
         }
         .content{
             
@@ -178,14 +180,24 @@ body {
                 width: calc(350px / 2) !important;
             }
             form.container-inputs {
-                //background-color: yellow;
                 p {
-                    width: 360px !important;
+                    width: 90vw !important;
                 }
                 input[type='submit'] { 
                     width: 200px !important;
                 }
             }
+        }
+    }
+}
+
+@media screen and (max-width:506px){
+    .login-right {
+        h1 {
+            font-size: 30px !important;
+        } 
+        h2 {
+            font-size: 24px !important;
         }
     }
 }

@@ -191,6 +191,7 @@ main .form .container-passo3 {
 }
 main .form .container-passo3 p {
   margin-bottom: 28px;
+  text-align: center;
 }
 main .form .container-passo3 .container-input-senha {
   position: relative;
@@ -253,4 +254,69 @@ main .form .container-passo3 .container-input-senha input {
 .card-payment .card-bottom h2 {
   margin-top: 75px;
   margin-bottom: 30px;
+}
+
+@media screen and (max-width: 1265px) {
+  .home {
+    padding: 0 60px;
+  }
+  main {
+    padding: 0 60px 0 60px;
+  }
+  main .payment-content {
+    width: 85vw;
+  }
+}
+@media screen and (max-width: 802px) {
+  .container-passo1 .payment-id {
+    flex-direction: column;
+  }
+  .container-passo1 .payment-id p {
+    margin-bottom: 0.6em;
+  }
+  .container-passo1 .payment-id input {
+    margin-left: 0 !important;
+  }
+  .container-passo1 #span-codigo-barras {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 685px) {
+  .progress {
+    margin-right: 15px !important;
+  }
+}
+@media screen and (max-width: 618px) {
+  .home {
+    padding: 0 30px;
+  }
+  main {
+    padding: 0 30px 0 10px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .home {
+    padding: 0 30px;
+    margin-bottom: 40px;
+  }
+  .progress {
+    display: none !important;
+  }
+  main {
+    padding: 0 30px 0 30px;
+  }
+}
+@media screen and (max-width: 444px) {
+  .container-passo3 .container-input-senha label {
+    display: none;
+  }
+}
+@media screen and (max-width: 384px) {
+  .input-barras {
+    width: 95% !important;
+    margin-bottom: 5px;
+  }
+  #span-codigo-barras {
+    width: 100% !important;
+  }
 }/*# sourceMappingURL=payment.css.map */

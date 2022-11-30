@@ -56,7 +56,6 @@ main#content .form-emprestimo .container-inputs {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  margin-bottom: 100px;
 }
 main#content .form-emprestimo .container-inputs input, main#content .form-emprestimo .container-inputs select {
   border: 1px solid rgba(3, 2, 37, 0.3);
@@ -72,7 +71,7 @@ main#content .form-emprestimo .container-inputs input {
   padding: 10px;
   margin-bottom: 30px;
 }
-main#content .form-emprestimo .container-inputs label, main#content .form-emprestimo .container-inputs p {
+main#content .form-emprestimo .container-inputs label {
   font-weight: 300;
   font-size: 20px;
   margin-bottom: 5px;
@@ -82,7 +81,14 @@ main#content .form-emprestimo .container-inputs select {
   padding: 5px 5px 5px 10px;
   margin-bottom: 50px;
 }
-main#content .form-emprestimo .container-inputs p span#valor-parcelas {
+main#content .form-emprestimo p {
+  font-weight: 300;
+  font-size: 20px;
+  width: 550px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+main#content .form-emprestimo p span#valor-parcelas {
   color: #051960;
   margin-left: 1.3em;
 }
@@ -99,4 +105,18 @@ main#content .form-emprestimo input[type=submit] {
 }
 main#content .form-emprestimo input[type=submit]:hover {
   cursor: pointer;
+}
+
+@media screen and (max-width: 1265px) {
+  .home {
+    padding: 0 60px;
+  }
+}
+@media screen and (max-width: 660px) {
+  #content .form-emprestimo {
+    width: 85vw !important;
+  }
+  #content .form-emprestimo p {
+    width: 85vw !important;
+  }
 }/*# sourceMappingURL=loan.css.map */
