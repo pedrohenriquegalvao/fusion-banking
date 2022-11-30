@@ -62,7 +62,7 @@ buttonStep1.addEventListener('click', (evento) => {
 
     let isFormOk = true;
 
-    if(!/^[0-9]+$/.test(codigo1) || !/^[0-9]+$/.test(codigo2) || !/^[0-9]+$/.test(codigo3) || !/^[0-9]+$/.test(codigo4)) {
+    if(!/^[0-9]{5,}$/.test(codigo1) || !/^[0-9]{5,}$/.test(codigo2) || !/^[0-9]{5,}$/.test(codigo3) || !/^[0-9]{5,}$/.test(codigo4)) {
         document.getElementById('span-codigo-barras').style.display = "block";
         isFormOk = false;
     }

@@ -213,19 +213,22 @@ main .form .container-passo3 .container-input-senha input {
   height: 100vh;
   position: fixed;
   background-color: rgba(0, 0, 0, 0.39);
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.18);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
 .card-payment {
+  font-family: "Inter", sans-serif;
   width: 300px;
-  height: 50%;
-  background-color: #FFF;
+  height: 45%;
+  background-color: #EEF2FF;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  border-radius: 8px;
 }
 .card-payment .card-top, .card-payment .card-bottom {
   display: flex;
@@ -233,12 +236,21 @@ main .form .container-passo3 .container-input-senha input {
   justify-content: center;
 }
 .card-payment .card-top {
+  border-radius: 8px 8px 0px 0px;
   background-color: #030225;
-  height: 50%;
+  height: 30%;
 }
 .card-payment .card-top img {
-  width: 100px;
+  width: 80px;
 }
 .card-payment .card-bottom {
-  height: 50%;
+  border-radius: 0px 0px 8px 8px;
+  height: 70%;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: center;
+}
+.card-payment .card-bottom h2 {
+  margin-top: 75px;
+  margin-bottom: 30px;
 }/*# sourceMappingURL=payment.css.map */
