@@ -97,6 +97,7 @@ nav .close-sidebar {
     font-size: 40px;
     position: absolute;
     right: 40px;
+    z-index: 2;
   }
   body .options {
     background-color: #05042b;
@@ -110,6 +111,7 @@ nav .close-sidebar {
     right: -100vw;
     -webkit-animation-duration: 1s;
             animation-duration: 1s;
+    z-index: 1;
   }
   body .options .nav-left, body .options .nav-right {
     flex-direction: column;

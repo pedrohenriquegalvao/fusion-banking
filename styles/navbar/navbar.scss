@@ -102,6 +102,7 @@ nav {
             font-size: 40px;
             position: absolute;
             right: 40px;
+            z-index: 2;
         }
         .options{
             background-color: aux.$azulmarinho2;
@@ -114,6 +115,7 @@ nav {
             padding: 1em 1em;
             right: -100vw;
             animation-duration: 1s;
+            z-index: 1;
             .nav-left, .nav-right {
                 flex-direction: column;
             }

@@ -15,10 +15,12 @@ function toggleSidebar() {
     if(showSidebar) {
         options.style.right = '0';
         options.style.animationName = 'showSidebar';
+        options.style.display = 'flex';
         navIcon.classList.remove('fa-bars');
         navIcon.classList.add('fa-xmark');
     } else {
         options.style.right = '-100vw';
+        options.style.display = 'none';
         options.style.animationName = '';
         navIcon.classList.remove('fa-xmark');
         navIcon.classList.add('fa-bars');
