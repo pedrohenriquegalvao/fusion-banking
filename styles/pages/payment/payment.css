@@ -27,6 +27,12 @@
   font-size: 13px;
 }
 
+.alerta-senha {
+  display: none;
+  color: #000;
+  font-size: 13px;
+}
+
 main {
   padding: 0 180px;
   display: flex;
@@ -40,13 +46,13 @@ main .progress {
   margin-right: 80px;
 }
 main .progress .wrapper-round {
-  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
   font-family: "Inter", sans-serif;
   font-weight: 200;
+  display: none;
 }
 main .progress .wrapper-round .round {
   position: relative;
@@ -57,10 +63,6 @@ main .progress .wrapper-round .round {
   color: #000;
   border: 1px solid #030225;
   margin-bottom: 7px;
-}
-main .progress .wrapper-round .round-active {
-  background-color: #030225;
-  color: #FFF;
 }
 main .progress .wrapper-round .step-number {
   position: absolute;
@@ -80,6 +82,13 @@ main .progress .wrapper-round::after {
 }
 main .progress .wrapper-round:last-child::after {
   display: none;
+}
+main .progress .wrapper-round-active {
+  display: flex;
+}
+main .progress .wrapper-round-active .round {
+  background-color: #030225;
+  color: #FFF;
 }
 main .payment-content {
   font-family: "Heebo", sans-serif;
@@ -123,7 +132,11 @@ main .form .step-btn .finish {
   background-color: #0F38C9;
 }
 main .form .form-step {
+  display: none;
   margin-bottom: 85px;
+}
+main .form .form-step-active {
+  display: block;
 }
 main .form .container-passo1 {
   padding-top: 60px;
@@ -192,4 +205,40 @@ main .form .container-passo3 .container-input-senha input {
   height: 30px;
   border: 1px solid rgba(3, 2, 37, 0.3);
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.18);
+}
+
+.payment-approved {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.39);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card-payment {
+  width: 300px;
+  height: 50%;
+  background-color: #FFF;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.card-payment .card-top, .card-payment .card-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card-payment .card-top {
+  background-color: #030225;
+  height: 50%;
+}
+.card-payment .card-top img {
+  width: 100px;
+}
+.card-payment .card-bottom {
+  height: 50%;
 }/*# sourceMappingURL=payment.css.map */

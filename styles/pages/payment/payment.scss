@@ -20,13 +20,18 @@
     font-size: 13px;
 }
 
+.alerta-senha {
+    display: none;
+    color: #000;
+    font-size: 13px;
+}
+
 main  {
     padding: 0 180px;
     display: flex;
 
     // ----- PARTE ESQUERDA (PROGRESSO) ------
     .progress{
-        
         padding: 20px 5px;
         display: flex;
         flex-direction: column;
@@ -34,13 +39,13 @@ main  {
         align-items: center;
         margin-right: 80px;
         .wrapper-round {
-            display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             position: relative;
             font-family: aux.$inter;
             font-weight: 200;
+            display: none;
             .round {
                 position: relative;
                 width: 90px;
@@ -51,17 +56,12 @@ main  {
                 border: 1px solid aux.$azulmarinho;
                 margin-bottom: 7px;
             }
-            .round-active {
-                background-color: aux.$azulmarinho;
-                color: #FFF;
-            }
             .step-number {
                 position: absolute;
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
             }
-            
             
             &::after {
                 content: "";
@@ -76,6 +76,13 @@ main  {
             
             &:last-child::after {          
                 display: none; 
+            }
+        }
+        .wrapper-round-active  {
+            display: flex;
+            .round {
+                background-color: aux.$azulmarinho;
+                color: #FFF;
             }
         }
         
@@ -126,9 +133,15 @@ main  {
                 background-color: aux.$azulpadrao;
             }
         }
+
+        
         // PASSO 1 DO PAGAMENTO - Preenchimento
         .form-step {
+            display: none;
             margin-bottom: 85px;
+        }
+        .form-step-active {
+            display: block;
         }
         .container-passo1 {
             padding-top: 60px;
@@ -176,7 +189,6 @@ main  {
                 width: 100%;
                 
                 tr {
-
                     td {
                         padding: 10px 15px;
                     }
@@ -214,7 +226,41 @@ main  {
     
 }
 
+.payment-approved {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.39);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
+.card-payment {
+    width: 300px;
+    height: 50%;
+    background-color: #FFF;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    .card-top, .card-bottom  {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .card-top {
+        background-color: aux.$azulmarinho;
+        height: 50%;
+        img{ 
+            width: 100px;
+        }
+    }
+    .card-bottom {
+        height: 50%;
+    }
+}
 
 
 

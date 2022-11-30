@@ -50,19 +50,19 @@
 
         <!-- Passos e Barra de progresso -->
         <section class="progress">
-            <div class="wrapper-round">
-                <div class="round round-active">
+            <div class="wrapper-round  wrapper-round-active"  id="wrapper-round-1">
+                <div class="round">
                     <span class="step-number">1</span>
                 </div>
                 <p>Preenchimento</p>
             </div>
-            <div class="wrapper-round">
+            <div class="wrapper-round" id="wrapper-round-2">
                 <div class="round">
                     <span class="step-number">2</span>
                 </div>
                 <p>Confirmação</p>
             </div>
-            <div class="wrapper-round">
+            <div class="wrapper-round" id="wrapper-round-3">
                 <div class="round">
                     <span class="step-number">3</span>
                 </div>
@@ -78,7 +78,7 @@
             <form action="#" class="form">
     
                 <!-- PASSO 1 -->
-                <div class="form-step form-step-active">
+                <div class="form-step form-step-active"  id="div-step-1">
     
                     <div class="container-passo1">
                         
@@ -108,7 +108,7 @@
                 </div>
     
                 <!-- PASSO 2 -->
-                <div class="form-step">
+                <div class="form-step" id="div-step-2">
                     <div class="container-passo2">
     
                         <table border="1">
@@ -143,15 +143,18 @@
                 </div>
     
                 <!-- PASSO 3 -->
-                <div class="form-step">
+                <div class="form-step" id="div-step-3">
                     
                     <div class="container-passo3">
                         <p>Digite sua senha de transação para finalizar o pagamento</p>
                         <div class="container-input-senha">
                             <label for="senha-transacao">Senha</label>
                             <input type="password" name="senha-transacao" id="senha-transacao">
+                            
                         </div>
+                        <span class="alerta-senha" id="span-senha-transacao">A senha deve possuir exatamente 4 caracteres numéricos.</span>
                     </div>
+                    
     
                     <div class="step-btn">
                         <button class="finish" id="btn-finish">Finalizar</button>
@@ -165,6 +168,17 @@
 
 
     </main>
+    <div class="payment-approved">
+        <div class="card-payment">
+            <div class="card-top">
+                <img src="/img/success2.png" alt="">
+            </div>
+            <div class="card-bottom">
+                <p>Pagamento realizado com sucesso!</p>
+            </div>
+            
+        </div>
+    </div>
 
     <script src="/js/navbar.js"></script>
     <script src="/js/payment.js"></script>
